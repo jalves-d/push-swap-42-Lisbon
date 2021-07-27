@@ -1,8 +1,9 @@
-CFLAGS = -Wall -Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra -g -I includes
 
 NAME = push_swap
 
-SRCS = main.c ft_swapt.c ft_swap.c ft_psutilsm.c ft_psutils.c ft_opt.c ft_op.c
+SRCS = srcs/main.c srcs/ft_swapt.c srcs/ft_swap.c \
+	srcs/ft_psutilsm.c srcs/ft_psutils.c srcs/ft_opt.c srcs/ft_op.c
 
 OBJS = $(SRCS:.c=.o)
 
