@@ -1,5 +1,4 @@
-
-#include "ft_pushswap.h"
+#include "pushswap.h"
 
 void	ft_sort(int size, int *array)
 {

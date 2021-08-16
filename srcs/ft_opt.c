@@ -1,4 +1,4 @@
-#include "ft_pushswap.h"
+#include "pushswap.h"
 
 int	ft_mop(t_list *stacks, int cnum)
 {

@@ -1,5 +1,4 @@
-
-#include "ft_pushswap.h"
+#include "pushswap.h"
 
 int	find_first(t_list *stacks)
 {
@@ -62,7 +61,6 @@ void	pb(t_list *stacks)
 {
 	int	i;
 	int	temp;
-
 
 	i = 0;
 	temp = stacks->sA[0];

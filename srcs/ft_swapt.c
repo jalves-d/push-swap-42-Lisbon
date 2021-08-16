@@ -1,5 +1,4 @@
-
-#include "ft_pushswap.h"
+#include "pushswap.h"
 
 void	sa(t_list *stacks)
 {

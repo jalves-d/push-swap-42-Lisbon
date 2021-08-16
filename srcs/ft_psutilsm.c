@@ -1,5 +1,4 @@
-
-#include "ft_pushswap.h"
+#include "pushswap.h"
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
@@ -7,7 +6,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	unsigned int	j;
 
 	if (*to_find == 0)
-		return ((char*)str);
+		return ((char *)str);
 	i = 0;
 	while (str[i] != '\0' && i < len)
 	{
@@ -15,7 +14,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 		while ((to_find[j] == str[i + j]) && i + j < len)
 		{
 			if (to_find[j + 1] == '\0')
-				return ((char*)str + i);
+				return ((char *)str + i);
 			j++;
 		}
 		i++;
