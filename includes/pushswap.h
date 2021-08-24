@@ -1,4 +1,16 @@
-#ifndef	PUSHSWAP_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pushswap.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jalves-d <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/24 17:37:20 by jalves-d          #+#    #+#             */
+/*   Updated: 2021/08/24 17:37:38 by jalves-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef PUSHSWAP_H
 # define PUSHSWAP_H
 
 # include <unistd.h>
@@ -7,12 +19,12 @@
 
 typedef struct s_list
 {
-	int		*sA;
-	int		*sB;
-	int		size;
-	int		pos;
-	int		ch;
-}			t_list;
+	int	*sA;
+	int	*sB;
+	int	size;
+	int	pos;
+	int	ch;
+}				t_list;
 
 void	ft_sort(int size, int *array);
 int		find_big(t_list *stacks);
