@@ -6,7 +6,7 @@ void	ft_sort(int size, int *array)
 	int	temp;
 
 	i = 0;
-	while (i < size)
+	while (i < size - 1)
 	{
 		if (array[i] > array[i + 1])
 		{

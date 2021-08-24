@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Werror -Wextra -g -I includes
+CFLAGS = -Wall -Werror -Wextra -g -I includes -fsanitize=address
 
 NAME = push_swap
 
@@ -8,7 +8,7 @@ SRCS = srcs/main.c srcs/ft_swapt.c srcs/ft_swap.c \
 OBJS = $(SRCS:.c=.o)
 
 $(NAME) : $(OBJS)
-	gcc $(OBJS) $(FLAGS) -o $(NAME)
+	gcc $(OBJS) $(CFLAGS) -o $(NAME)
 
 all: $(NAME)
 

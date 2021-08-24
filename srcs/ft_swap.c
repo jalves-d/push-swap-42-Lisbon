@@ -48,7 +48,7 @@ void	rb(t_list *stacks)
 
 	first = stacks->sB[find_first(stacks) + 1];
 	i = find_first(stacks) + 1;
-	while (i <= stacks->size)
+	while (i <= stacks->size - 1)
 	{
 		stacks->sB[i] = stacks->sB[i + 1];
 		i++;
@@ -66,7 +66,7 @@ void	pb(t_list *stacks)
 	temp = stacks->sA[0];
 	if (temp == 0)
 		exit(0);
-	while (i <= stacks->size)
+	while (i <= stacks->size - 1)
 	{
 		stacks->sA[i] = stacks->sA[i + 1];
 		i++;

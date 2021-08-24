@@ -15,7 +15,10 @@ int	ft_mop(t_list *stacks, int cnum)
 	if (cnum == 10)
 	{
 		stacks->ch = stacks->ch + (ssize / 10);
-		middle = astack[stacks->ch];
+		if (stacks->ch < ft_len(astack))
+			middle = astack[stacks->ch];
+		else
+			middle = astack[stacks->ch - 1];
 	}
 	else
 	{

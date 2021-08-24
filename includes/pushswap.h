@@ -6,7 +6,7 @@
 /*   By: jalves-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 17:37:20 by jalves-d          #+#    #+#             */
-/*   Updated: 2021/08/24 17:37:38 by jalves-d         ###   ########.fr       */
+/*   Updated: 2021/08/24 19:11:42 by jalves-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct s_list
 	int	ch;
 }				t_list;
 
+int		ft_len(int *arr);
 void	ft_sort(int size, int *array);
 int		find_big(t_list *stacks);
 int		find_small(t_list *stacks);

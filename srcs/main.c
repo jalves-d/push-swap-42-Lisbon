@@ -53,9 +53,10 @@ void	swapb(t_list *stacks)
 	int	new_size;
 	int	dist;
 
-	if (stacks->sB[find_first(stacks) + 2] == stacks->sB[find_big(stacks)]
-		&& sizes(stacks, 'b') > 3)
-		sb(stacks);
+	if (find_first(stacks) + 2 < ft_len(stacks->sB))
+		if (stacks->sB[find_first(stacks) + 2] == stacks->sB[find_big(stacks)])
+			if (sizes(stacks, 'b') > 3)
+				sb(stacks);
 	new_size = sizes(stacks, 'b');
 	new_size = new_size / 2;
 	dist = (find_big(stacks) - find_first(stacks));

@@ -33,3 +33,11 @@ void	ft_print(char *str)
 		i++;
 	}
 }
+
+int	ft_len(int *arr)
+{
+	int	size;
+
+	size = sizeof(*arr) / sizeof(arr[0]);
+	return (size);
+}
