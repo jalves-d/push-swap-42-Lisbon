@@ -6,7 +6,7 @@
 /*   By: jalves-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 17:37:20 by jalves-d          #+#    #+#             */
-/*   Updated: 2021/08/26 13:59:32 by jalves-d         ###   ########.fr       */
+/*   Updated: 2021/08/26 14:18:40 by jalves-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,6 @@ void	swapa(t_list *stacks, int middles);
 void	swapb(t_list *stacks);
 int		ft_checkord(t_list *stacks);
 void	checklastwo(t_list *stacks);
-int 	printerror();
+int		printerror(void);
 
 #endif

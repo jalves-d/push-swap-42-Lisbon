@@ -1,5 +1,4 @@
 #include "pushswap.h"
-#include <stdio.h>
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
@@ -35,16 +34,15 @@ void	ft_print(char *str)
 	}
 }
 
-
 int	ft_len(int *arr)
 {
 	size_t	size;
 
-	size = sizeof(*arr)/sizeof(arr[0]);
+	size = sizeof(*arr) / sizeof(arr[0]);
 	return (size);
 }
 
-int	printerror()
+int	printerror(void)
 {
 	write(1, "Error !\n", 8);
 	return (0);
@@ -52,7 +50,7 @@ int	printerror()
 
 void	checklastwo(t_list *stacks)
 {
-	if(stacks->sA[stacks->size - 1] < stacks->sA[stacks->size - 2])
+	if (stacks->sA[stacks->size - 1] < stacks->sA[stacks->size - 2])
 	{
 		if (stacks->size > 2)
 		{

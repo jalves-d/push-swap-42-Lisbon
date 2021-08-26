@@ -104,7 +104,7 @@ int	main(int argc, char **argv)
 	ft_parssing(&stacks, argv, argc - 1);
 	if (argc == 4)
 		swapt(&stacks);
-	else if(stacks.size > 2)
+	else if (stacks.size > 2)
 	{
 		while (sizes(&stacks, 'a') > 3)
 		{
