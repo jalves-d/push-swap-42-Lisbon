@@ -48,6 +48,8 @@ int	ft_atoi(const char *str)
 		num = num * 10 + str[i] - '0';
 		i++;
 	}
+	if ((num * negative) > 2147483647 || (num * negative) < -2147483648)
+		exit(printerror());
 	return (num * negative);
 }
 
