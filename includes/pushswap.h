@@ -6,7 +6,7 @@
 /*   By: jalves-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 17:37:20 by jalves-d          #+#    #+#             */
-/*   Updated: 2021/08/26 14:18:40 by jalves-d         ###   ########.fr       */
+/*   Updated: 2021/09/13 12:49:17 by jalves-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 typedef struct s_list
 {
-	int	*sA;
-	int	*sB;
+	int	*sa;
+	int	*sb;
 	int	size;
 	int	pos;
 	int	ch;

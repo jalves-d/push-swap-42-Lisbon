@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_psutilsm.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jalves-d <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/13 12:46:51 by jalves-d          #+#    #+#             */
+/*   Updated: 2021/09/13 12:52:23 by jalves-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pushswap.h"
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
@@ -50,7 +62,7 @@ int	printerror(void)
 
 void	checklastwo(t_list *stacks)
 {
-	if (stacks->sA[stacks->size - 1] < stacks->sA[stacks->size - 2])
+	if (stacks->sa[stacks->size - 1] < stacks->sa[stacks->size - 2])
 	{
 		if (stacks->size > 2)
 		{

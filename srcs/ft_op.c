@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_op.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jalves-d <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/13 12:46:24 by jalves-d          #+#    #+#             */
+/*   Updated: 2021/09/13 12:50:17 by jalves-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pushswap.h"
 
 void	ft_sort(int size, int *array)
@@ -28,14 +40,14 @@ int	find_big(t_list *stacks)
 	big = INT_MIN;
 	while (i <= stacks->size)
 	{
-		if (big <= stacks->sB[i] && stacks->sB[i] != 0)
-			big = stacks->sB[i];
+		if (big <= stacks->sb[i] && stacks->sb[i] != 0)
+			big = stacks->sb[i];
 		i++;
 	}
 	i = 0;
 	while (i <= stacks->size)
 	{
-		if (big == stacks->sB[i])
+		if (big == stacks->sb[i])
 			return (i);
 		i++;
 	}
@@ -48,11 +60,11 @@ int	find_small(t_list *stacks)
 	int	small;
 
 	i = 0;
-	small = stacks->sA[i];
+	small = stacks->sa[i];
 	while (i <= stacks->size)
 	{
-		if (small > stacks->sA[i] && stacks->sA[i] != 0)
-			small = stacks->sA[i];
+		if (small > stacks->sa[i] && stacks->sa[i] != 0)
+			small = stacks->sa[i];
 		i++;
 	}
 	return (small);
